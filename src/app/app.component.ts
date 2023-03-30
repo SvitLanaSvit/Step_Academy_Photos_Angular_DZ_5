@@ -13,5 +13,10 @@ export class AppComponent {
     'https://www.gatesfoundation.org/',
     'https://www.gatesnotes.com/',
     'https://twitter.com/billgates'
+  ];
+  photos: string[] = [
+    '../assets/BugattiVeyron.jpg',
+    '../assets/Logo.jpg',
+    '../assets/EttoreBugatti.jpg'
   ]
 }
