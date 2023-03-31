@@ -19,4 +19,24 @@ export class AppComponent {
     '../assets/Logo.jpg',
     '../assets/EttoreBugatti.jpg'
   ]
+  names: string[] = [
+    'BugattiVeyron',
+    'Logo',
+    'EttoreBugatti'
+  ]
+  photosToFile: Photo[] = [
+    {url: this.photos[0], name: this.names[0]},
+    {url: this.photos[1], name: this.names[1]},
+    {url: this.photos[2], name: this.names[2]}
+  ]
+}
+
+class Photo{
+  url: string;
+  name: string;
+
+  constructor(url: string, name: string){
+    this.name = name;
+    this.url = url;
+  }
 }

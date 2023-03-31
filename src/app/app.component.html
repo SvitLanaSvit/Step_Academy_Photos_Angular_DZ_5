@@ -1,9 +1,12 @@
 <div class="wrapper">
   <h3>{{quote}}</h3>
 <div class="photos">
-  <img src="../assets/BugattiVeyron.jpg" alt="BugattiVeyron">
+  <!-- <img src="../assets/BugattiVeyron.jpg" alt="BugattiVeyron">
   <img src="../assets/Logo.jpg" alt="Logo">
-  <img src="../assets/EttoreBugatti.jpg" alt="EttoreBugatti">
+  <img src="../assets/EttoreBugatti.jpg" alt="EttoreBugatti"> -->
+  <div *ngFor="let p of photosToFile">
+    <img src="{{p.url}}" alt="{{p.name}}">
+  </div>
 </div>
 <div class="links">
   <div *ngFor="let q of quotesGates">
